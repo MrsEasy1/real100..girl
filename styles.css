@@ -1,0 +1,126 @@
+/* Основний стиль */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background-color: #1a1a2e; /* Темний фон */
+    color: #f1f1f1; /* Світлий текст */
+}
+
+/* Хедер */
+header {
+    background-color: #16213e; /* Темний заголовок */
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #c7c7ff; /* Нежний світло-блакитний колір */
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #f1f1f1; /* Світлий текст */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #7597de; /* Яскравий блакитний при наведенні */
+}
+
+/* Контент */
+.content {
+    padding: 50px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffba7c; /* Ніжно-оранжевий */
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    margin: 20px 0;
+}
+
+.content blockquote {
+    font-style: italic;
+    color: #888;
+    margin: 20px 0;
+    border-left: 4px solid #ffba7c; /* Оранжева смужка зліва */
+    padding-left: 20px;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: #ffba7c;
+}
+
+.content ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.content li {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    margin: 5px 0;
+}
+
+.highlight {
+    background: #998a00; /* Яскравий фон для акцентів */
+}
+
+/* Футер */
+footer {
+    background-color: #16213e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+/* Анімації */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
